@@ -43,4 +43,14 @@ ext = ('.pdf')
 
 allfiles = pullTextFrompdf(data_dir)
 
-x=5
+with open(r'raw_output.txt', 'w') as fp:
+    for idx,file in enumerate(allfiles):
+        fp.write("NEW MINUTES  " + str(idx + 1) + "\n\n"  )
+        for page in file:
+            # write each item on a new line
+            fp.write("%s\n" % page)
+        fp.write('\n')
+    print('Done')
+
+
+print("Total meeting notes" + str(len(allfiles)))
