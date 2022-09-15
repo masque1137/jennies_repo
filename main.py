@@ -2,12 +2,6 @@ import PyPDF2
 import os
 import pandas as pd
 
-from pdfminer.pdfpage import PDFPage
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.converter import TextConverter
-from pdfminer.layout import LAParams
-import io
-
 
 """
 Script made to ingest pdfs of meeting notes and return the preceding, containing, and succeeding paragraphs of the key term, referenced as
