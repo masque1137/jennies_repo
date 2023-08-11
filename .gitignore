@@ -130,8 +130,14 @@ dmypy.json
 
 #data
 data/
-.pdf
+*.pdf
+*.xlsx
 
 #output
 *.txt
 *.csv
+*.html
+
+#.exe creation
+build/
+dist/
